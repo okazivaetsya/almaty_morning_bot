@@ -11,4 +11,4 @@ RUN pip install -r requirements.txt --no-cache-dir
 
 COPY ./ /app
 
-CMD ["python", "morning.py", "0:8000"] 
+CMD ["python", "main.py"] 
