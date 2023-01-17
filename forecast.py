@@ -52,7 +52,7 @@ def get_forecast():
     rf_temp_max = json_data['DailyForecasts'][0][
         'RealFeelTemperatureShade'
     ]['Maximum']['Value']
-    return (
+    forecast = (
         f'Погода в Алматы:\n'
 
         f'Днем {day_precipitation_type.lower()}, '
@@ -66,3 +66,4 @@ def get_forecast():
         f'Температура от {round(rf_temp_min)} до {round(rf_temp_max)}\n'
         f'Примечание: {text}\n'
     )
+    return forecast
