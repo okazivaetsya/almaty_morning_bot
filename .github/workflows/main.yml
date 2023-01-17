@@ -72,4 +72,4 @@ jobs:
               echo ACCWEATHER_KEY=${{ secrets.ACCWEATHER_KEY }} >> .env
               echo BOT_TOKEN=${{ secrets.BOT_TOKEN }} >> .env
               echo CURRENCY_KEY=${{ secrets.CURRENCY_KEY }} >> .env
-              sudo docker run -d --name okazivaetsya/almaty_telegram_bot --restart always okazivaetsya/almaty_telegram_bot
+              sudo docker run -d --name almaty_telegram_bot --restart always okazivaetsya/almaty_telegram_bot
