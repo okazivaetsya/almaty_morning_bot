@@ -64,7 +64,8 @@ jobs:
             script: |
               sudo docker pull okazivaetsya/almaty_telegram_bot
               
-              sudo docker stop
+              sudo docker container stop almaty_telegram_bot
+              sudo docker container rm almaty_telegram_bot
               sudo docker system prune
               
               rm .env
