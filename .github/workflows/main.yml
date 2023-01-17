@@ -3,7 +3,7 @@ name: almaty_telegram_bot workflow
 on: [push]
 
 jobs:
-  pep8 test:
+  pep8_test:
     runs-on: ubuntu-latest
 
     steps:
