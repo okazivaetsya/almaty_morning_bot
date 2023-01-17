@@ -1,0 +1,7 @@
+version: '3.3'
+services:
+  bot:
+    image: okazivaetsya/almaty_telegram_bot:latest
+    restart: always
+    env_file:
+      - .env
